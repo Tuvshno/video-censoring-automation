@@ -1,10 +1,5 @@
 import pyautogui
 import time
-# pyautogui.moveTo(100,100, duration=0)
-# pyautogui.dragRel(0,50,duration=1)
-
-#00:00:01:26
-#00:00:04:17
 
 class Control():
     

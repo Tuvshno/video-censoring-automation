@@ -1,10 +1,7 @@
 from control import Control
+from captions import Captions
 
-keys = {
-    "00:00:01:26":"00:00:04:17",
-    "00:00:05:20":"00:00:05:35",
-    "00:00:07:17":"00:00:07:35"
-}
+caption = Captions("captions.txt")
 
-control = Control(keys)
+control = Control(caption.getKeys())
 control.cut_all()

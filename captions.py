@@ -5,9 +5,11 @@ class Captions():
     profanity = set()
 
     def __init__(self, filePath):
+        print("Initializing Captions...")
         self.file = open(filePath)
         self.__intializeProfanity()
         self.__initializeKeys()
+
 
     def __intializeProfanity(self):
         profanityFile = open("profanity.txt")

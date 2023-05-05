@@ -6,12 +6,13 @@ class Control():
     keys = {}
 
     def __init__(self, keys):
+        print("Initalizing Control...")
         self.keys = keys
     
     def cut_all(self):
        for key, value in self.keys.items():
           self.__cut_section(key, value)
-          time.sleep(0.5)
+          time.sleep(0.75)
 
 
     def __cut_section(self, beg, end):
@@ -28,9 +29,13 @@ class Control():
 
     def __delete(self):
       pyautogui.press('left')
+      pyautogui.press('left')
+      pyautogui.press('left')
+      time.sleep(0.25)
       pyautogui.press('delete')
 
     def check(self):
       beg = list(self.keys.keys())[0]
       end = self.keys[beg]
       self.cut_section(beg, end)
+

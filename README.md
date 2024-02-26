@@ -54,7 +54,7 @@ After installation, reopen your terminal or command prompt and run ffmpeg -versi
 ### Running the Project
 With FFmpeg installed, you're all set to run the project.
 
-### Setting Up a Virtual Environment
+## Setting Up a Virtual Environment
 
 To avoid conflicts with other projects or system-wide Python packages, it's recommended to use a virtual environment. Here's how to set it up:
 
@@ -82,7 +82,7 @@ To avoid conflicts with other projects or system-wide Python packages, it's reco
     source myenv/bin/activate
     ```
 
-### Installing Dependencies
+## Installing Dependencies
 
 With the virtual environment activated, install the project dependencies by running:
 
@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 This command will install all the packages listed in the requirements.txt file, ensuring you have all the necessary dependencies.
 
-### Running the Program
+## Running the Program
 
 To run the program, navigate to the src folder and execute main.py:
 
@@ -103,9 +103,9 @@ python main.py  # or python3 main.py on some systems
 
 Follow any on-screen instructions to interact with the program.
 
-### Authors
+## Authors
 tuvshno
 
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 >>>>>>> Stashed changes

@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-# video-censoring-automation
-Automate editing out censored words from a video in Premiere Pro using AI made captions
-=======
 # Automated Audio Censoring
 This project is audio cleansing utility designed remove profanity content in audio. Utilizing the capabilities of OpenAI's Whisper model, this tool  analyzes audio files to identify and flag profanity. Upon detection, the program utilizes the FFmpeg framework to discretely mute or excise the undesirable segments, ensuring your content remains appropriate for all audiences.
 

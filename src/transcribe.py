@@ -1,13 +1,16 @@
 import torch
 from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
 
+
+
 def transcribe(audio_file_path, model_type):
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
     torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
 
     model_id = f"openai/whisper-{model_type}"
 
-    print("Loading model...")
+    print(f"Loading model using {device}...")
+    
 
     # Original Model
     model = AutoModelForSpeechSeq2Seq.from_pretrained(
@@ -47,8 +50,12 @@ def transcribe(audio_file_path, model_type):
     )
     
     print(f"Transcribing...")
+    print(f"Depending on your file size, model, and GPU, the transcription process may take a few minutes...")
+    
     result = pipe(audio_file_path, generate_kwargs={"language": "english"}, return_timestamps="word")
-    print(result["text"])
+    
+    # print(result["text"])
     # print(result["chunks"])
+    print(result)
     
     return result["chunks"]

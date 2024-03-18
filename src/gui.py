@@ -190,9 +190,11 @@ class OptionsScreen(tk.Frame):
         self.status_var.set(f"Found {len(matches)} profanities. Muting sections...")
         
         if len(matches) == 0:
-            print(f"No Profanity was found!")
             print(f"If there was a mistake, check the transcribed output and check if the profanity your looking for is in the profanity list.")
             print(f"There are also limitations with the AI Model, its not perfect especially with smaller models. Possibly use a larger model.")
+            print(f"No Profanity was found!")
+            self.status_var.set(f"Process complete. Processed audio saved to: {output_path}")
+            
             
         else:
             timestamps = [match['timestamp'] for match in matches]

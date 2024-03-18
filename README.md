@@ -13,6 +13,8 @@ python main.py  # or python3 main.py on some systems
 
 Follow any on-screen instructions to interact with the program.
 
+![Example Image](example.png)
+
 ## Authors
 tuvshno
 

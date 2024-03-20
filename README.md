@@ -2,7 +2,7 @@
 This project automatically removes censors profanity inside of an audio file using OpenAI Whisper model, HuggingFace Transformers, and FFMPEG.
 
 ### How does it work?
-It first transcribes the audio data using OpenAI Whisper Model and HuggingFace Transformer. The output of the model provides timestamps on the word level. After recieving the timestamped data, we match any words to a large library of profanity words and list and timestamps that require censoring. We then pipeline does timestamps to FFMPEG where we silence the audio where does timestamps are and finally export the new file.
+It first transcribes the audio data using OpenAI Whisper Model and HuggingFace Transformers. The output of the model provides timestamps on the word level. After recieving the timestamped data, we match any words to a large library of profanity words. We then pipeline those timestamps to FFMPEG where we silence the audio and finally export the new file.
 
 To run the program, navigate to the src folder and execute main.py:
 
